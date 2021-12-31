@@ -1,11 +1,10 @@
-
-export default function layerMap(map, data) {
+export default function layerMap(map, data ) {
   let chapters = {
-    world : {
-      center: { lon: 0.00000, lat: 0.00000 },
-      zoom: 1.00,
-      pitch: 0.00,
-      bearing: 0.00
+    world: {
+      center: { lon: 0.0, lat: 0.0 },
+      zoom: 1.0,
+      pitch: 0.0,
+      bearing: 0.0,
     },
     lampung: {
       center: { lon: 104.79504, lat: -5.45454 },
@@ -64,71 +63,57 @@ export default function layerMap(map, data) {
       speed: 0.5,
     },
   };
-  console.log(map);
-  if(map){
-    if (data === 1) {
-      map.flyTo(chapters["lampung"]);
-      map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "none");
-      map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
-    }
-    else if (data === 2) {
-      map.flyTo(chapters["tanggamus"]);
-      map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "none");
-      map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
-    }
-    else if (data === 3) {
-      map.flyTo(chapters["resikoBanjirTanggamus"]);
-      map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "visible");
-      map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
-    }
-    else if (data === 4) {
-      map.flyTo(chapters["desaTanggamus"]);
-      map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "visible");
-      map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "visible");
-    }
-    else if (data === 5) {
-      map.flyTo(chapters["ntt"]);
-      map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
-      map.setLayoutProperty(
-        "manggarai-risikobanjir-583vxu",
-        "visibility",
-        "none"
-      );
-      map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
-    }
-    else if (data === 6) {
-      map.flyTo(chapters["manggarai"]);
-      map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
-      map.setLayoutProperty(
-        "manggarai-risikobanjir-583vxu",
-        "visibility",
-        "none"
-      );
-      map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
-    }
-    else if (data === 7) {
-      map.flyTo(chapters["resikoBanjirManggarai"]);
-      map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
-      map.setLayoutProperty(
-        "manggarai-risikobanjir-583vxu",
-        "visibility",
-        "visible"
-      );
-      map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
-    }
-    else if (data === 8) {
-      map.flyTo(chapters["daerahManggarai"]);
-      map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
-      map.setLayoutProperty(
-        "manggarai-risikobanjir-583vxu",
-        "visibility",
-        "visible"
-      );
-      map.setLayoutProperty(
-        "manggarai-penduduk-1b90uw",
-        "visibility",
-        "visible"
-      );
-    }
+  if (data === 1) {
+    map.flyTo(chapters["lampung"]);
+    map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "none");
+    map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
+  } else if (data === 2) {
+    map.flyTo(chapters["tanggamus"]);
+    map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "none");
+    map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
+  } else if (data === 3) {
+    map.flyTo(chapters["resikoBanjirTanggamus"]);
+    map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "visible");
+    map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "none");
+  } else if (data === 4) {
+    map.flyTo(chapters["desaTanggamus"]);
+    map.setLayoutProperty("resikoBanjirTanggamus", "visibility", "visible");
+    map.setLayoutProperty("desa-tanggamus-1-1jw5rx", "visibility", "visible");
+  } else if (data === 5) {
+    map.flyTo(chapters["ntt"]);
+    map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
+    map.setLayoutProperty(
+      "manggarai-risikobanjir-583vxu",
+      "visibility",
+      "none"
+    );
+    map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
+  } else if (data === 6) {
+    map.flyTo(chapters["manggarai"]);
+    map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
+    map.setLayoutProperty(
+      "manggarai-risikobanjir-583vxu",
+      "visibility",
+      "none"
+    );
+    map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
+  } else if (data === 7) {
+    map.flyTo(chapters["resikoBanjirManggarai"]);
+    map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
+    map.setLayoutProperty(
+      "manggarai-risikobanjir-583vxu",
+      "visibility",
+      "visible"
+    );
+    map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "none");
+  } else if (data === 8) {
+    map.flyTo(chapters["daerahManggarai"]);
+    map.setLayoutProperty("manggarai-kab-6ayun1", "visibility", "visible");
+    map.setLayoutProperty(
+      "manggarai-risikobanjir-583vxu",
+      "visibility",
+      "visible"
+    );
+    map.setLayoutProperty("manggarai-penduduk-1b90uw", "visibility", "visible");
   }
 }
