@@ -11,7 +11,7 @@ export default function FlourishScrollama() {
   };
 
   return (
-    <div>
+    <div style={{fontFamily: "trebuchet"}} >
       <div className="px-10 py-auto flex justify-between">
         <div className="basis-1/3">
           <Scrollama onStepEnter={onStepEnter}>

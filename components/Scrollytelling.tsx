@@ -53,7 +53,7 @@ export default function Scrollytelling() {
           />
         </div>
       </div>
-      <div className="absolute">
+      <div className="absolute" style={{fontFamily: "trebuchet"}} >
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={1} key={1}>
             <div
@@ -147,7 +147,7 @@ export default function Scrollytelling() {
             </div>
           </Step>
         </Scrollama>
-        <section className="bg-white justify-center py-10">
+        <section className="bg-white justify-center py-10 w-screen">
           <div className="items-center max-w-6xl mx-auto my-10 px-10">
             <p className="font-bold text-2xl text-center mb-10">
               Peningkatan Kapasitas Institusi

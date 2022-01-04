@@ -9,7 +9,7 @@ export default function peningkatanKapasitas() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>FDRCSI-DRR</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"

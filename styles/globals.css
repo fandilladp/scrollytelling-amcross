@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "trebuchet";
+  src: url("../public/assets/trebuchet/trebuc.woff");
+  font-style: normal;
+}

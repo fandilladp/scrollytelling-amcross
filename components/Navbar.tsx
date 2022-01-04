@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import LogoPMI from "../public/images/LogoPMI.jpg";
+import LogoPMI from "../public/images/LogoPMI.png";
 import LogoAMCROSS from "../public/images/LogoAMCROSS.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -21,8 +21,8 @@ export default function Navbar() {
             src={LogoPMI}
             alt="Logo"
             width="100"
-            height="60"
-            className="mr-2"
+            height="45"
+            className="mr-2 py-auto"
           />
         </Link>
         <Link href="/">
@@ -110,9 +110,9 @@ export default function Navbar() {
             <a href="#" className="hidden lg:flex items-center py-4 px-2">
               <Image
                 src={LogoPMI}
-                alt="Logo"
+                alt="Logo PMI"
                 width="100"
-                height="60"
+                height="45"
                 className="mr-2"
               />
             </a>
@@ -141,7 +141,7 @@ export default function Navbar() {
             <a href="#" className="hidden lg:flex items-center py-4 px-2">
               <Image
                 src={LogoAMCROSS}
-                alt="Logo"
+                alt="Logo AMCROSS"
                 width="100"
                 height="60"
                 className="mr-2"

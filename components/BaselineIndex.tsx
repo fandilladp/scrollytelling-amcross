@@ -3,10 +3,10 @@ import BaseLine01 from "../public/images/baseline01.jpeg";
 
 export default function BaselineIndex() {
   return (
-    <div className="relative z-10 bg-white mt-96 flex justify-center">
+    <div className="relative z-10 bg-white mt-96 flex justify-center" style={{fontFamily: "trebuchet"}} >
       <div className="items-center max-w-6xl mx-auto px-10">
         <div className="py-10 ">
-          <h1 className="font-bold text-2xl text-center mb-10">
+          <h1 className="font-bold text-2xl text-center mb-10 font-sans">
             Latar Belakang Program
           </h1>
           <Image src={BaseLine01} layout="responsive" />

@@ -45,7 +45,7 @@ export default function StepMapScrollama() {
   return (
     <>
       <div id="map" className="h-screen w-screen top-0 fixed -z-10" />
-      <div className="pt-3 pb-0 relative mx-14">
+      <div className="pt-3 pb-0 relative mx-14" style={{fontFamily: "trebuchet"}} >
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={1} key={1}>
             <div className="my-96 bg-white rounded-md md:w-1/3 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5">
@@ -78,7 +78,7 @@ export default function StepMapScrollama() {
                   Analisis Google Earth Engine Alluvionne
                 </a>
               </p>
-              <p className="text-justify text-xl">
+              <p className="text-justify text-xl" >
                 Kabupaten Tanggamus adalah salah satu kabupaten di Provinsi
                 Lampung, Indonesia. Ibu kota kabupaten ini terletak di Kota
                 Agung. Kabupaten ini memiliki luas wilayah 4.654,98 Km² dan

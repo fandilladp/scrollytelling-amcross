@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>FDRCSI-DRR</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
@@ -28,7 +28,7 @@ export default function Home() {
           }
           bg={1}
         />
-        <div className="relative z-0 bg-white">
+        <div className="relative z-0 bg-white"style={{fontFamily: "trebuchet"}} >
           <div className="relative bg-white flex justify-center ">
             <div className="items-center max-w-6xl mx-auto px-10">
               <div className="py-10 ">

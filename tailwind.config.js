@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      'sans': ['Helvetica Neue'],
-    }
+      sans: ["Helvetica Neue"],
+    },
   },
   plugins: [],
-}
+};
