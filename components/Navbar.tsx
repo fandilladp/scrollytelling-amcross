@@ -52,23 +52,36 @@ export default function Navbar() {
               </a>
             </div>
             <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-red-600 font-bold items-center justify-center hover:bg-red-600 hover:text-white ">
-                Home
+              <a
+                className={`${
+                  router.pathname == "/"
+                    ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                    : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+                }`}
+              >
+                Latar Belakang
               </a>
             </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-red-600 font-bold items-center justify-center hover:bg-red-600 hover:text-white ">
-                Services
+            <Link href="peningkatanKapasitas">
+              <a
+                className={`${
+                  router.pathname == "/peningkatanKapasitas"
+                    ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                    : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+                }`}
+              >
+                Peningkatan Kapasitas
               </a>
             </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-red-600 font-bold items-center justify-center hover:bg-red-600 hover:text-white ">
-                About us
-              </a>
-            </Link>
-            <Link href="/">
-              <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-red-600 font-bold items-center justify-center hover:bg-red-600 hover:text-white ">
-                Contact us
+            <Link href="harapanKedepannya">
+              <a
+                className={`${
+                  router.pathname == "/harapanKedepannya"
+                    ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                    : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+                }`}
+              >
+                Harapan Kedepan
               </a>
             </Link>
             <div>
@@ -86,7 +99,7 @@ export default function Navbar() {
         </div>
       </div>
       <button
-        className=" inline-flex p-3 hover:bg-red-600 rounded lg:hidden text-red-600 ml-auto hover:text-white outline-none"
+        className=" inline-flex p-3 rounded lg:hidden text-red-600 ml-auto hover:text-red-800 outline-none"
         onClick={handleClick}
       >
         <svg
@@ -119,21 +132,34 @@ export default function Navbar() {
           </div>
           <Link href="/">
             <a
-              className={`${router.pathname == "/" ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white" : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+              className={`${
+                router.pathname == "/"
+                  ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                  : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
               }`}
             >
               Latar Belakang
             </a>
           </Link>
           <Link href="peningkatanKapasitas">
-            <a className={`${router.pathname == "/peningkatanKapasitas" ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white" : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-              }`}>
+            <a
+              className={`${
+                router.pathname == "/peningkatanKapasitas"
+                  ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                  : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+              }`}
+            >
               Peningkatan Kapasitas
             </a>
           </Link>
           <Link href="harapanKedepannya">
-            <a className={`${router.pathname == "/harapanKedepannya" ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white" : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-              }`}>
+            <a
+              className={`${
+                router.pathname == "/harapanKedepannya"
+                  ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
+                  : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
+              }`}
+            >
               Harapan Kedepan
             </a>
           </Link>

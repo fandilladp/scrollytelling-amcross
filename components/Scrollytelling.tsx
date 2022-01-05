@@ -15,6 +15,7 @@ import Footer from "./Footer";
 export default function Scrollytelling() {
   const [currentStepIndex, setCurrentStepIndex] = useState(1);
   const [imageCall, setimageCall] = useState(sekolah001);
+  const [transition, setTransition] = useState("opacity-50");
 
   const onStepEnter = ({ data }) => {
     setCurrentStepIndex(data);
@@ -49,11 +50,11 @@ export default function Scrollytelling() {
             alt="Map1"
             layout="responsive"
             id="imgV1"
-            className="opacity-100"
+            className={transition}
           />
         </div>
       </div>
-      <div className="absolute" style={{fontFamily: "trebuchet"}} >
+      <div className="absolute w-full" style={{ fontFamily: "trebuchet" }}>
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={1} key={1}>
             <div
@@ -147,7 +148,7 @@ export default function Scrollytelling() {
             </div>
           </Step>
         </Scrollama>
-        <section className="bg-white justify-center py-10 w-screen">
+        <section className="bg-white justify-center py-10">
           <div className="items-center max-w-6xl mx-auto my-10 px-10">
             <p className="font-bold text-2xl text-center mb-10">
               Peningkatan Kapasitas Institusi
@@ -199,7 +200,10 @@ export default function Scrollytelling() {
             frameBorder="0"
           ></iframe>
         </section>
-        <Footer data={"Harapan kedepan untuk program FDRCSI-DRR"} link={"harapanKedepannya"}/>
+        <Footer
+          data={"Harapan kedepan untuk program FDRCSI-DRR"}
+          link={"harapanKedepannya"}
+        />
       </div>
     </div>
   );

@@ -45,10 +45,10 @@ export default function StepMapScrollama() {
   return (
     <>
       <div id="map" className="h-screen w-screen top-0 fixed -z-10" />
-      <div className="pt-3 pb-0 relative mx-14" style={{fontFamily: "trebuchet"}} >
+      <div className="pt-3 pb-0 relative mx-auto" style={{fontFamily: "trebuchet"}} >
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={1} key={1}>
-            <div className="my-96 bg-white rounded-md md:w-1/3 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5">
+            <div className="my-96 bg-white rounded-md  md:w-1/3 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5">
               <h3 className="font-bold uppercase text-justify mb-2 text-xl">Lampung</h3>
               <Image src={imgProvLampung} className="w-full" />
               <p className="text-xs text-blue-500 mb-3">
@@ -128,7 +128,7 @@ export default function StepMapScrollama() {
               <iframe
                 className="flourish-embed flourish-table"
                 width="100%"
-                height="400"
+                height="500"
                 scrolling="no"
                 src={`https://public.flourish.studio/visualisation/3919568/embed`}
               />
@@ -220,7 +220,7 @@ export default function StepMapScrollama() {
               <iframe
                 className="flourish-embed flourish-table"
                 width="100%"
-                height="300"
+                height="400"
                 scrolling="no"
                 src={`https://public.flourish.studio/visualisation/8235044/embed`}
               />

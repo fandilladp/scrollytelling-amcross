@@ -17,14 +17,9 @@ export default function peningkatanKapasitas() {
         />
         <script src="https://public.flourish.studio/resources/embed.js"></script>
       </Head>
-      <main className="bg-white">
+      <main className="bg-white w-full" style={{ fontFamily: "trebuchet" }}>
         <Navbar />
-        <HeroImage
-          data={
-            "Peningkatan Kapasitas"
-          }
-          bg={2}
-        />
+        <HeroImage data={"Peningkatan Kapasitas"} bg={2} />
         <div className="items-center max-w-6xl mx-auto px-10 py-10 mb-80">
           <p className="text-2xl font-bold text-center mt-10 py-10">
             Peningkatan kapasitas komunitas dan sekolah
