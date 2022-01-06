@@ -13,76 +13,247 @@ import masy004 from "../public/images/masy004.jpg";
 import style from "./css/Sticky.module.css";
 import Footer from "./Footer";
 export default function Scrollytelling() {
-  const [currentStepIndex, setCurrentStepIndex] = useState(1);
-  const [imageCall, setimageCall] = useState(sekolah001);
-  const [transition, setTransition] = useState("opacity-50");
+  const [currentStepIndex, setCurrentStepIndex] = useState<any>(0);
+  const [scrollDirection, setScrollDirection] = useState("down");
+  const [transition1, setTransition1] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition2, setTransition2] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition3, setTransition3] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition4, setTransition4] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition5, setTransition5] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition6, setTransition6] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition7, setTransition7] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
+  const [transition8, setTransition8] = useState("opacity-100 transition delay-1000 duration-300 ease-in-out");
 
-  const onStepEnter = ({ data }) => {
-    setCurrentStepIndex(data);
+  const onStepEnter = ({ data, direction }) => {
+    setCurrentStepIndex(data + 1);
+    setScrollDirection(direction);
   };
 
   useEffect(() => {
-    if (currentStepIndex === 1) {
-      setimageCall(sekolah001);
-    } else if (currentStepIndex === 2) {
-      setimageCall(sekolah002);
-    } else if (currentStepIndex === 3) {
-      setimageCall(sekolah003);
-    } else if (currentStepIndex === 4) {
-      setimageCall(sekolah004);
-    } else if (currentStepIndex === 5) {
-      setimageCall(masy001);
-    } else if (currentStepIndex === 6) {
-      setimageCall(masy002);
-    } else if (currentStepIndex === 7) {
-      setimageCall(masy003);
-    } else if (currentStepIndex === 8) {
-      setimageCall(masy004);
+    if (scrollDirection == "down") {
+      if (currentStepIndex === 0) {
+        setTransition1("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 1) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 2) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 3) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 4) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 5) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 6) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 7) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("opacity-100 transition delay-1000 duration-300 ease-in-out");
+      }
+    } else if (scrollDirection === "up") {
+      if (currentStepIndex === 1) {
+        setTransition1("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 2) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 3) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 3) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 4) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 5) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 6) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("opacity-100 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+      } else if (currentStepIndex === 7) {
+        setTransition1("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition2("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition3("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition4("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition5("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition6("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition7("hidden opacity-0 transition delay-1000 duration-300 ease-in-out");
+        setTransition8("opacity-100 transition delay-1000 duration-300 ease-in-out");
+      }
     }
-    console.log(currentStepIndex);
-  }, [onStepEnter, currentStepIndex]);
+  }, [onStepEnter]);
   return (
     <div className="relative">
       <div className={style.graphic}>
-        <div className="text-center h-full w-full overflow-hidden">
-          <Image
-            src={imageCall}
-            alt="Map1"
-            layout="responsive"
-            id="imgV1"
-            className={transition}
-          />
+        <div
+          className={`${transition1}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={sekolah001} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition2}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={sekolah002} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition3}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={sekolah003} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition4}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={sekolah004} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition5}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={masy001} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition6}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={masy002} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition7}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={masy003} alt="Map1" layout="responsive" id="imgV1" />
+        </div>
+        <div
+          className={`${transition8}text-center h-full w-full overflow-hidden`}
+        >
+          <Image src={masy004} alt="Map1" layout="responsive" id="imgV1" />
         </div>
       </div>
       <div className="absolute w-full" style={{ fontFamily: "trebuchet" }}>
-        <Scrollama onStepEnter={onStepEnter}>
+        <Scrollama onStepEnter={onStepEnter} offset={0}>
+          <Step data={0} key={0}>
+            <div
+              className="mx-10 step mb-80 mt-96 items-center"
+              style={{ height: 2280 }}
+            >
+              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+                12 sekolah (7 sekolah di Tanggamus dan 5 sekolah di Manggarai)
+                telah menyelenggarakan pelatihan sekolah siaga bencana bagi
+                siswa.
+              </p>
+            </div>
+          </Step>
+
           <Step data={1} key={1}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
             >
               <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
-                12 sekolah (7 sekolah di Tanggamus dan 5 sekolah di Manggarai) telah
-                menyelenggarakan pelatihan sekolah siaga bencana bagi siswa.
+                Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar
+                yang disusun PMI, siswa diharapkan memiliki pengetahuan tentang
+                bahaya, pengetahuan tentang bencana, memahami risiko di rumah,
+                sekolah dan desa.
               </p>
             </div>
           </Step>
 
           <Step data={2} key={2}>
-            <div
-              className="mx-10 step my-80 items-center"
-              style={{ height: 2280 }}
-            >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
-                Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar yang disusun
-                PMI, siswa diharapkan memiliki pengetahuan tentang bahaya,
-                pengetahuan tentang bencana, memahami risiko di rumah, sekolah
-                dan desa. 
-              </p>
-            </div>
-          </Step>
-
-          <Step data={3} key={3}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
@@ -94,7 +265,7 @@ export default function Scrollytelling() {
             </div>
           </Step>
 
-          <Step data={4} key={4}>
+          <Step data={3} key={3}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
@@ -108,7 +279,7 @@ export default function Scrollytelling() {
             </div>
           </Step>
 
-          <Step data={5} key={5}>
+          <Step data={4} key={4}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
@@ -116,12 +287,13 @@ export default function Scrollytelling() {
               <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
                 Difasilitasi oleh relawan PMI, 7 desa di Kabupaten Tanggamus dan
                 5 desa di Kabupaten Manggarai telah mengembangkan dan menguji
-                rencana kontinjensi bencana atau /SOP(Standard Operational Procedure) bencana berbasis masyarakat.
+                rencana kontinjensi bencana atau /SOP(Standard Operational
+                Procedure) bencana berbasis masyarakat.
               </p>
             </div>
           </Step>
 
-          <Step data={6} key={6}>
+          <Step data={5} key={5}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
@@ -135,7 +307,7 @@ export default function Scrollytelling() {
             </div>
           </Step>
 
-          <Step data={7} key={7}>
+          <Step data={6} key={6}>
             <div
               className="mx-10 step my-80 items-center"
               style={{ height: 2280 }}
@@ -157,15 +329,16 @@ export default function Scrollytelling() {
               Seperti kegiatan di masyarakat dan sekolah peningkatan kapasitas
               di PMI lokal juga sempat tidak berjalan dengan baik. Namun
               pendampingan masih dilakukan oleh PMI pusat terkait kegiatan
-              program dan respon eCovid-19. PMI Tanggamus berhasil membuat Business
-              eContinuities plan (BCP) atau Rencana Kelanjutan Bisnis terkait layanan yang diberikan selama masa
-              pandemi Covid-19. Rekruitmen juga dilakukan untuk relawan PMI dan
-              diberikan pelatihan terkait ICBRR.
+              program dan respon eCovid-19. PMI Tanggamus berhasil membuat
+              Business eContinuities plan (BCP) atau Rencana Kelanjutan Bisnis
+              terkait layanan yang diberikan selama masa pandemi Covid-19.
+              Rekruitmen juga dilakukan untuk relawan PMI dan diberikan
+              pelatihan terkait ICBRR.
             </p>
             <p className="py-5 px-10 text-justify text-xl">
-              Tantangan yang cukup sigifikan adalah adanya pandemi.
-              Antisipasi yang dilakukan dengan melakuan realokasi budget dan
-              perubahan aktivitas.
+              Tantangan yang cukup sigifikan adalah adanya pandemi. Antisipasi
+              yang dilakukan dengan melakuan realokasi budget dan perubahan
+              aktivitas.
             </p>
           </div>
           <div className="video mb-10">
@@ -184,9 +357,9 @@ export default function Scrollytelling() {
               Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan
               yang berfokus pada respon Covid-19. Pengembangan materi KIE
               dilakukan sebagai bentuk edukasi yang lebih mudah untuk dipahami
-              bagi masyarakat. Selain itu hotline Covid-19 juga dibentuk dan dimotori
-              oleh para relawan PMI. Siaran Radio menjadi salah satu yang
-              merupakan kampanye perilaku hidup dan sehat selama eCovid-19.
+              bagi masyarakat. Selain itu hotline Covid-19 juga dibentuk dan
+              dimotori oleh para relawan PMI. Siaran Radio menjadi salah satu
+              yang merupakan kampanye perilaku hidup dan sehat selama eCovid-19.
             </p>
             <p className="px-10 text-justify text-xl">
               Berikut ini rangkuman kegiatan yang sudah dilakukan oleh PMI
