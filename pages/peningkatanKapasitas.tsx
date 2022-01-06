@@ -29,7 +29,7 @@ export default function peningkatanKapasitas() {
             sesuai dengan perencanaan awal. Di tahun 2020 Covid-19 masuk ke
             Indonesia dan peningkatan kasus terjadi siginifikan diantara akhir
             2020 dan pertengahan 2021. PMI harus beberapa kali melakukan lock
-            down kantor, sehingga proses pengerjaan menjadi terganggu. Keputusan
+            down kantor, sehingga proses pelaksanaan proyek menjadi terganggu. Keputusan
             gubernur dari masing-masing provinsi yang mengeluarkan aturan ketat
             untuk penyelenggaraan proses pelatihan juga turut menunda
             pelaksanaan kegiatan dilapangan.

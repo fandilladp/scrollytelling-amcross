@@ -24,11 +24,14 @@ export default function Home() {
         <Navbar />
         <HeroImage
           data={
-            " Program Masyarakat Siaga Bencana Melalui Pengurangan Risiko Bencana Berkelanjutan dan Inklusif"
+            "Program Masyarakat Siaga Bencana Melalui Pengurangan Risiko Bencana Berkelanjutan dan Inklusif"
           }
           bg={1}
         />
-        <div className="relative z-0 bg-white"style={{fontFamily: "trebuchet"}} >
+        <div
+          className="relative z-0 bg-white"
+          style={{ fontFamily: "trebuchet" }}
+        >
           <div className="relative bg-white flex justify-center ">
             <div className="items-center max-w-6xl mx-auto px-10">
               <div className="py-10 ">
@@ -39,7 +42,7 @@ export default function Home() {
                   Reduction)
                 </p>
                 <p className="py-5 px-10 text-justify text-xl">
-                  untuk membangun kapasitas dan kesiapan masyarakat dalam
+                  membangun kapasitas dan kesiapan masyarakat dalam
                   merespon bencana serta memperkuat kapasitas kelembagaan PMI
                   dalam menyediakan kebutuhan dasar masyarakat pada kondisi
                   darurat melalui program Program Masyarakat Siaga Bencana
@@ -72,7 +75,10 @@ export default function Home() {
         </div>
       </main>
       <footer>
-        <Footer data={"Apa saja yang sudah dilakukan oleh PMI dilapangan ?"} link={"peningkatanKapasitas"}/>
+        <Footer
+          data={"Apa saja yang sudah dilakukan oleh PMI dilapangan ?"}
+          link={"peningkatanKapasitas"}
+        />
       </footer>
     </>
   );

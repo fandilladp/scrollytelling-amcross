@@ -18,8 +18,7 @@ export default function BaselineIndex() {
           </a>
           <p className="py-5 px-10 text-justify text-xl">
             Provinsi Lampung dan Nusa Tenggara Timur dipilih sebagai wilayah
-            prioritas tinggi dengan merujuk pada kriteria dari Margaret A
-            Cargill Philantropies (MACP) dan ditetapkan dalam kelas risiko
+            prioritas tinggi ditetapkan dalam kelas risiko
             tinggi dalam indeks pengurangan risiko nasional.
           </p>
           <p className="py-5 px-10 text-justify text-xl">
@@ -40,12 +39,12 @@ export default function BaselineIndex() {
           allowFullScreen
         ></iframe>
         <div className="py-10 ">
-          <h1 className="font-bold text-2xl text-center mb-10">
-            Latar Belakang Program
+          <h1 className="font-bold text-2xl text-center mb-10 font-sans">
+            Study Baseline
           </h1>
           <p className="py-5 px-10 text-justify text-xl">
             Berdasarkan data awal yang didapatkan melalui Studi <i>Baseline</i>,
-            masyarakat dankomunitas sekolah memiliki pengetahuan mengenai risiko
+            masyarakat dan komunitas sekolah memiliki pengetahuan mengenai risiko
             bencana yang ada di lingkungan mereka, namum masih sedikit yang tau
             bagaimana respon yang tepat dalam merencanakan atau bereaksi ketika
             bencana terjadi.
@@ -66,7 +65,7 @@ export default function BaselineIndex() {
             Covid-19 di area implementasi.
           </p>
           <p className="py-5 px-10 text-justify text-xl">
-            Hasil studi awal bisa dilihat pada visualisasi data berikut ini.
+            Hasil Studi Baseline bisa dilihat pada visualisasi data berikut ini.
           </p>
         </div>
       </div>

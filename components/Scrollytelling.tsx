@@ -62,7 +62,7 @@ export default function Scrollytelling() {
               style={{ height: 2280 }}
             >
               <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
-                12 sekolah (7 di Tanggamus dan 5 di Manggarai) telah
+                12 sekolah (7 sekolah di Tanggamus dan 5 sekolah di Manggarai) telah
                 menyelenggarakan pelatihan sekolah siaga bencana bagi siswa.
               </p>
             </div>
@@ -74,10 +74,10 @@ export default function Scrollytelling() {
               style={{ height: 2280 }}
             >
               <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
-                Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar
+                Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar yang disusun
                 PMI, siswa diharapkan memiliki pengetahuan tentang bahaya,
                 pengetahuan tentang bencana, memahami risiko di rumah, sekolah
-                dan desa.
+                dan desa. 
               </p>
             </div>
           </Step>
@@ -116,7 +116,7 @@ export default function Scrollytelling() {
               <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
                 Difasilitasi oleh relawan PMI, 7 desa di Kabupaten Tanggamus dan
                 5 desa di Kabupaten Manggarai telah mengembangkan dan menguji
-                rencana kontinjensi/SOP bencana berbasis masyarakat.
+                rencana kontinjensi bencana atau /SOP(Standard Operational Procedure) bencana berbasis masyarakat.
               </p>
             </div>
           </Step>
@@ -156,14 +156,14 @@ export default function Scrollytelling() {
             <p className="py-5 px-10 text-justify text-xl">
               Seperti kegiatan di masyarakat dan sekolah peningkatan kapasitas
               di PMI lokal juga sempat tidak berjalan dengan baik. Namun
-              pendampingan masih dilakukan dari PMI pusat terkait kegiatan
-              project dan respon covid. PMI Tanggamus berhasil membuat Business
-              continuities plan (BCP) terkait layanan yang diberikan selama masa
+              pendampingan masih dilakukan oleh PMI pusat terkait kegiatan
+              program dan respon eCovid-19. PMI Tanggamus berhasil membuat Business
+              eContinuities plan (BCP) atau Rencana Kelanjutan Bisnis terkait layanan yang diberikan selama masa
               pandemi Covid-19. Rekruitmen juga dilakukan untuk relawan PMI dan
               diberikan pelatihan terkait ICBRR.
             </p>
             <p className="py-5 px-10 text-justify text-xl">
-              Tantangan yang cukup sigifikan dirasakan adalah adanya pandemi.
+              Tantangan yang cukup sigifikan adalah adanya pandemi.
               Antisipasi yang dilakukan dengan melakuan realokasi budget dan
               perubahan aktivitas.
             </p>
@@ -184,9 +184,9 @@ export default function Scrollytelling() {
               Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan
               yang berfokus pada respon Covid-19. Pengembangan materi KIE
               dilakukan sebagai bentuk edukasi yang lebih mudah untuk dipahami
-              bagi masyarakat, selain itu hotline covid-19 dibentuk dan dimotori
+              bagi masyarakat. Selain itu hotline Covid-19 juga dibentuk dan dimotori
               oleh para relawan PMI. Siaran Radio menjadi salah satu yang
-              merupakan kampanye perilaku hidup dan sehat selama covid-19.
+              merupakan kampanye perilaku hidup dan sehat selama eCovid-19.
             </p>
             <p className="px-10 text-justify text-xl">
               Berikut ini rangkuman kegiatan yang sudah dilakukan oleh PMI

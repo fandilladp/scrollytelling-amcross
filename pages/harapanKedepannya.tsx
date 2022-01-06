@@ -25,17 +25,16 @@ export default function harapanKedepannya() {
         />
         <div className="items-center max-w-6xl mx-auto px-10 mt-40 mb-80">
           <p className="text-justify text-xl">
-            Program yang masih berjalan ini masih bisa terus berjalan dengan
-            segala kendala dan antisipasi yang dilakukan berdasarkan kondisi
+            Program yang masih berjalan ini masih bisa terus berjalan walaupun masih terdapat kendala, namun antisipasi tetap dilakukan berdasarkan kondisi
             lapangan. Dari sisi program tentu bisa memberikan dampak yang
             signifikan kepada upaya kesiapsiagaan yang dibangun di tingkat desa
             dan sekolah sehingga program ini bisa membentuk komunitas yang
-            saling berkaitan dan tentunya dalam segala kegiatan memiliki pronsip
-            inklusifitas. Proses monitoring perlu dilakukan secara berkala
+            saling terhubung dan memiliki prinsip
+            inklusifitas dalam setiap kegiatannya. Proses monitoring perlu dilakukan secara berkala
             sehingga bisa memberikan masukan berarti untuk strategi implementasi
-            yang lebih tepat sesuai kondisi lapangan. Project ini masih berada
-            pada pertengahan fase, semoga kedepannya project bisa berjalan
-            dengan segala tantangan yang bisa kita atasi bersama, karna kami
+            yang lebih tepat sesuai kondisi lapangan. Program ini masih berada
+            pada fase pertengahan. Semoga kedepannya program bisa berjalan
+            dengan segala tantangan yang tentu harus dapat kita atasi bersama, karena kami
             tidak bisa sendiri, bersama-sama kami menjadi kuat dengan nilai
             kemanusiaan yang selalu kami junjung.
           </p>
