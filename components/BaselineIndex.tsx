@@ -4,7 +4,7 @@ import BaseLine01 from "../public/images/baseline01.jpeg";
 export default function BaselineIndex() {
   return (
     <div
-      className="relative z-10 bg-white mt-96 flex justify-center"
+      className="relative bg-white mt-96 flex justify-center"
       style={{ fontFamily: "trebuchet" }}
     >
       <div className="items-center w-full mx-auto ">

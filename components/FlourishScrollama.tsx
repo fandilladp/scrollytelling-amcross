@@ -143,7 +143,8 @@ export default function FlourishScrollama() {
         <div className={style.graphic}>
           <iframe
             width="100%"
-            height="700"
+            height="100%"
+            className="h-full"
             scrolling="no"
             src={
               `https://public.flourish.studio/story/1072910/embed#slide-` +
