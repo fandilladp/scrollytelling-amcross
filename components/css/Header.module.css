@@ -3,9 +3,6 @@
   background-image: url("../../public/images/header.jpg");
 
   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
   /* Set a specific height */
   height: 100vh;
 
@@ -20,9 +17,6 @@
   background-image: url("../../public/images/header2.jpg");
 
   /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-
   /* Set a specific height */
   height: 100vh;
 
