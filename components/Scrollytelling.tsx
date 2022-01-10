@@ -655,17 +655,13 @@ export default function Scrollytelling() {
               aktivitas.
             </p>
           </div>
-          <div className="video mb-10">
-            <iframe
-              width="100%"
-              height="800px"
-              src="https://www.youtube.com/embed/YWHXgd7t6Mw"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-              allowFullScreen
-            ></iframe>
-          </div>
+          <iframe
+            className="w-full aspect-video youtube mb-10"
+            title="vimeo-player"
+            src="https://www.youtube.com/embed/YWHXgd7t6Mw?controls=0"
+            frameBorder="0"
+            allowFullScreen
+          />
           <div className="items-center max-w-6xl mx-auto my-10 px-10">
             <p className="py-5 px-10 text-justify text-xl">
               Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan

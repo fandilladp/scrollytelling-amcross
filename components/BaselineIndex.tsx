@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BaseLine01 from "../public/images/baseline01.jpeg";
+import BaseLine01 from "../public/images/baseline01.jpg";
 
 export default function BaselineIndex() {
   return (

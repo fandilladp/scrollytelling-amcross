@@ -19,7 +19,7 @@ export default function harapanKedepannya() {
       <main style={{ fontFamily: "trebuchet" }}>
         <Navbar />
         <HeroImage data={"Harapan Kedepan"} bg={3} />
-        <div className="items-center max-w-6xl mx-auto px-10 mt-40 mb-80">
+        <div className="items-center max-w-6xl mx-auto px-10 my-40">
           <p className="text-justify text-xl">
             Program yang masih berjalan ini masih bisa terus berjalan walaupun
             masih terdapat kendala, namun antisipasi tetap dilakukan berdasarkan
@@ -36,17 +36,13 @@ export default function harapanKedepannya() {
             dengan nilai kemanusiaan yang selalu kami junjung.
           </p>
         </div>
-        <div className="video w-full mb-10">
-          <iframe
-            width="100%"
-            height="800px"
-            src="https://www.youtube.com/embed/gygt-SPXMUI"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
-            allowFullScreen
-          ></iframe>
-        </div>
+        <iframe
+          className="w-full aspect-video youtube"
+          title="vimeo-player"
+          src="https://www.youtube.com/embed/gygt-SPXMUI?controls=0"
+          frameBorder="0"
+          allowFullScreen
+        />
         <div className="mt-40 mb-0">
           <iframe
             src="https://uploads.knightlab.com/storymapjs/eb19f568b30bbcabf219d8fdbc3713e6/testimoni-pmi/index.html"
@@ -56,7 +52,7 @@ export default function harapanKedepannya() {
           ></iframe>
         </div>
       </main>
-      <CreditFooter/>
+      <CreditFooter />
     </div>
   );
 }

@@ -32,9 +32,9 @@ export default function Home() {
           className="relative z-0 bg-white"
           style={{ fontFamily: "trebuchet" }}
         >
-          <div className="relative bg-white flex justify-center ">
-            <div className="items-center max-w-6xl mx-auto px-10">
-              <div className="py-10 ">
+          <div className="relative bg-white w-full flex justify-center ">
+            <div className="w-full items-center">
+              <div className="py-10 max-w-6xl mx-auto px-10">
                 <p className="py-5 px-10 text-justify text-xl">
                   Sejak Januari 2020, Palang Merah Indonesia (PMI) bersama
                   Palang Merah Amerika melanjutkan Program Pengurangan Risiko
@@ -63,7 +63,7 @@ export default function Home() {
                 src="https://www.youtube.com/embed/Sr30IEiPoC4?controls=0"
                 frameBorder="0"
                 allowFullScreen
-              ></iframe>
+              />
               <p className="text-center py-10">Scroll untuk melanjutkan</p>
             </div>
           </div>
