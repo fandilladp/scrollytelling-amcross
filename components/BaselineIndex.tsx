@@ -53,7 +53,7 @@ export default function BaselineIndex() {
             className="font-bold text-2xl text-center my-10 font-sans"
             style={{ fontSize: "5vh" }}
           >
-            Studi Baseline
+            Studi <i>Baseline</i>
           </h1>
           <div className="w-full flex justify-center">
             <div className="max-w-6xl">

@@ -43,14 +43,12 @@ export default function harapanKedepannya() {
           frameBorder="0"
           allowFullScreen
         />
-        <div className="mt-40 mb-0">
-          <iframe
-            src="https://uploads.knightlab.com/storymapjs/eb19f568b30bbcabf219d8fdbc3713e6/testimoni-pmi/index.html"
-            frameBorder="0"
-            width="100%"
-            height="800"
-          ></iframe>
-        </div>
+        <iframe
+          src="https://uploads.knightlab.com/storymapjs/eb19f568b30bbcabf219d8fdbc3713e6/testimoni-pmi/index.html"
+          frameBorder="0"
+          width="100%"
+          height="800"
+        />
       </main>
       <CreditFooter />
     </div>

@@ -21,7 +21,10 @@ export default function peningkatanKapasitas() {
         <Navbar />
         <HeroImage data={"Peningkatan Kapasitas"} bg={2} />
         <div className="items-center max-w-6xl mx-auto px-10 py-10 mb-80">
-          <p className="text-2xl font-bold text-center mt-10 py-10">
+          <p
+            className="text-2xl font-bold text-center mt-10 py-10 font-sans"
+            style={{ fontSize: "5vh" }}
+          >
             Peningkatan kapasitas komunitas dan sekolah
           </p>
           <p className="text-justify text-xl py-10">
