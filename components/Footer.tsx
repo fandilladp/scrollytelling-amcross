@@ -8,7 +8,7 @@ interface Type{
 
 export default function Footer(props: Type) {
   return (
-    <div className="relative bg-red-600 w-full h-20 text-white text-xl text-center font-bold pt-6">
+    <div className="relative bg-red-600 w-full h-20 text-white text-xl text-center font-bold pt-6" style={{ fontFamily: "trebuchet" }}>
       <Link href={`${props.link}`}>
        {props.data}
       </Link>

@@ -454,56 +454,98 @@ export default function Scrollytelling() {
   }, [onStepEnter]);
   return (
     <div className="relative">
-      <div className={style.graphic}>
+      <div
+        className={`fixed -z-10 basis-full w-full h-full top-0 flex justify-center justify-items-center`}
+      >
         <div
-          className={`${transition1}text-center h-full w-full overflow-hidden`}
+          className={`${transition1}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={sekolah001} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={sekolah001}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition2}text-center h-full w-full overflow-hidden`}
+          className={`${transition2}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={sekolah002} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={sekolah002}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition3}text-center h-full w-full overflow-hidden`}
+          className={`${transition3}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={sekolah003} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={sekolah003}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition4}text-center h-full w-full overflow-hidden`}
+          className={`${transition4}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={sekolah004} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={sekolah004}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition5}text-center h-full w-full overflow-hidden`}
+          className={`${transition5}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={masy001} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={masy001}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition6}text-center h-full w-full overflow-hidden`}
+          className={`${transition6}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={masy002} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={masy002}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition7}text-center h-full w-full overflow-hidden`}
+          className={`${transition7}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={masy003} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={masy003}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
         <div
-          className={`${transition8}text-center h-full w-full overflow-hidden`}
+          className={`${transition8}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image src={masy004} alt="Map1" layout="responsive" id="imgV1" />
+          <Image
+            src={masy004}
+            alt="Map1"
+            className="overflow-hidden w-full h-screen"
+            id="imgV1"
+          />
         </div>
       </div>
       <div className="absolute w-full" style={{ fontFamily: "trebuchet" }}>
         <Scrollama onStepEnter={onStepEnter} offset={0}>
           <Step data={0} key={0}>
             <div
-              className="mx-10 step mb-80 mt-96 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 12 sekolah (7 sekolah di Tanggamus dan 5 sekolah di Manggarai)
                 telah menyelenggarakan pelatihan sekolah siaga bencana bagi
                 siswa.
@@ -513,10 +555,10 @@ export default function Scrollytelling() {
 
           <Step data={1} key={1}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 Menggunakan kurikulum pelatihan kebencanaan untuk sekolah dasar
                 yang disusun PMI, siswa diharapkan memiliki pengetahuan tentang
                 bahaya, pengetahuan tentang bencana, memahami risiko di rumah,
@@ -527,10 +569,10 @@ export default function Scrollytelling() {
 
           <Step data={2} key={2}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 Pelatihan ini bertujuan agar para siswa memiliki pemahaman
                 tentang kerentanan yang ada pada diri sendiri dan keluarganya.
               </p>
@@ -539,10 +581,10 @@ export default function Scrollytelling() {
 
           <Step data={3} key={3}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 {" "}
                 Dan diharapkan juga para siswa untuk memiliki peningkatan
                 kapasitas kesiapsiagaan bencana didalam diri mereka sendiri dan
@@ -553,10 +595,10 @@ export default function Scrollytelling() {
 
           <Step data={4} key={4}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 Difasilitasi oleh relawan PMI, 7 desa di Kabupaten Tanggamus dan
                 5 desa di Kabupaten Manggarai telah mengembangkan dan menguji
                 rencana kontinjensi bencana atau /SOP(Standard Operational
@@ -567,10 +609,10 @@ export default function Scrollytelling() {
 
           <Step data={5} key={5}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 SOP ini dibuat untuk mendorong pemahaman SIBAT, perangkat desa,
                 kelompok masyarakat dan anggota masyarakat peran dan fungsi
                 masing-masing elemen masyarakat dalam penanggulangan bencana
@@ -581,10 +623,10 @@ export default function Scrollytelling() {
 
           <Step data={6} key={6}>
             <div
-              className="mx-10 step my-80 items-center"
+              className="my-96 rounded-md   md:w-1/2 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5"
               style={{ height: 2280 }}
             >
-              <p className="bg-white p-10 text-xl text-justify w-1/2 drop-shadow-2xl rounded-lg">
+              <p className="bg-white p-10 text-xl text-justify overflow-hidden drop-shadow-2xl rounded-lg">
                 SOP ini juga memperjelas alur tugas, wewenang, dan tanggung
                 jawab setiap elemen masyarakat dalam Penanggulangan Bencana
                 Banjir.{" "}

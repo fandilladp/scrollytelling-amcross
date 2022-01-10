@@ -20,7 +20,7 @@ export default function Home() {
         />
         <script src="https://public.flourish.studio/resources/embed.js"></script>
       </Head>
-      <main>
+      <main style={{ fontFamily: "trebuchet" }}>
         <Navbar />
         <HeroImage
           data={
@@ -42,11 +42,11 @@ export default function Home() {
                   Reduction)
                 </p>
                 <p className="py-5 px-10 text-justify text-xl">
-                  membangun kapasitas dan kesiapan masyarakat dalam
-                  merespon bencana serta memperkuat kapasitas kelembagaan PMI
-                  dalam menyediakan kebutuhan dasar masyarakat pada kondisi
-                  darurat melalui program Program Masyarakat Siaga Bencana
-                  Melalui Pengurangan Risiko Bencana Berkelanjutan dan Inklusif
+                  membangun kapasitas dan kesiapan masyarakat dalam merespon
+                  bencana serta memperkuat kapasitas kelembagaan PMI dalam
+                  menyediakan kebutuhan dasar masyarakat pada kondisi darurat
+                  melalui program Program Masyarakat Siaga Bencana Melalui
+                  Pengurangan Risiko Bencana Berkelanjutan dan Inklusif
                   (Fostering Disaster-Ready Communities through Sustainable and
                   Inclusive Disaster Risk Reduction).
                 </p>
