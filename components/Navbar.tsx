@@ -1,18 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import LogoPMI from "../public/images/LogoPMI.jpg";
 import LogoAMCROSS from "../public/images/LogoAMCROSS.png";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-export default function Navbar() {
+export default function Navbar(props: any) {
   const [active, setActive] = useState(false);
-
+  const [localData, setLocalData] = useState("");
+  const [translate, setTranslate] = useState(localData);
   const router = useRouter();
 
   const handleClick = () => {
     setActive(!active);
   };
+
+  const handleTranslate = (data: any) => {
+    setTranslate(data);
+    props.onSelectLanguage(data);
+    localStorage.setItem("translate", data);
+  };
+
+  useEffect(() => {
+    const getData = localStorage.getItem("translate");
+    setLocalData(getData);
+  }, []);
   return (
     <>
       <nav className="flex items-center w-full fixed z-50 flex-wrap bg-white p-3 ">
@@ -58,7 +70,7 @@ export default function Navbar() {
                     : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
                 }`}
               >
-                Latar Belakang
+                {translate === "EN" ? <>Background</> : <> Latar Belakang</>}
               </a>
             </Link>
             <Link href="peningkatanKapasitas">
@@ -69,7 +81,11 @@ export default function Navbar() {
                     : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
                 }`}
               >
-                Peningkatan Kapasitas
+                {translate === "EN" ? (
+                  <>Capacity Upgrade</>
+                ) : (
+                  <> Peningkatan Kapasitas</>
+                )}
               </a>
             </Link>
             <Link href="harapanKedepannya">
@@ -80,177 +96,51 @@ export default function Navbar() {
                     : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
                 }`}
               >
-                Harapan Kedepan
+                {translate === "EN" ? <>Future Hope</> : <> Harapan Kedepan</>}
               </a>
             </Link>
+            {translate === "EN" ? (
+              <div
+                className="bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white cursor-pointer"
+                onClick={() => handleTranslate("ID")}
+              >
+                EN
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="px-1 h-6 w-6"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            ) : (
+              <div
+                className="bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold hover:bg-red-600 hover:text-white cursor-pointer align-center flex items-center content-center self-center justify-items-center"
+                onClick={() => handleTranslate("EN")}
+              >
+                ID
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="align-middle px-1 h-7 w-7"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+            )}
           </div>
         </div>
       </nav>
     </>
-    // navbar lama
-    // <nav className="flex fixed z-50 flex-wrap bg-white w-full">
-    //   <div className="lg:hidden ">
-    //     <Link href="/">
-    //       <Image
-    //         src={LogoPMI}
-    //         alt="Logo"
-    //         width="100"
-    //         height="45"
-    //         className="mr-2 py-auto"
-    //       />
-    //     </Link>
-    //     <Link href="/">
-    //       <Image
-    //         src={LogoAMCROSS}
-    //         alt="Logo"
-    //         width="100"
-    //         height="60"
-    //         className="mr-2"
-    //       />
-    //     </Link>
-    //     <div
-    //       className={`${
-    //         active ? "" : "hidden"
-    //       } bg-white w-fit lg:max-w-6xl lg:mx-auto lg:px-4`}
-    //     >
-    //       <div className=" lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-    //         <div>
-    //           <a href="/" className="hidden lg:flex items-center py-4 px-2">
-    //             <Image
-    //               src={LogoPMI}
-    //               alt="Logo"
-    //               width="100"
-    //               height="60"
-    //               className="mr-2"
-    //             />
-    //           </a>
-    //         </div>
-    //         <Link href="/">
-    //           <a
-    //             className={`${
-    //               router.pathname == "/"
-    //                 ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //                 : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //             }`}
-    //           >
-    //             Latar Belakang
-    //           </a>
-    //         </Link>
-    //         <Link href="peningkatanKapasitas">
-    //           <a
-    //             className={`${
-    //               router.pathname == "/peningkatanKapasitas"
-    //                 ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //                 : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //             }`}
-    //           >
-    //             Peningkatan Kapasitas
-    //           </a>
-    //         </Link>
-    //         <Link href="harapanKedepannya">
-    //           <a
-    //             className={`${
-    //               router.pathname == "/harapanKedepannya"
-    //                 ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //                 : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //             }`}
-    //           >
-    //             Harapan Kedepan
-    //           </a>
-    //         </Link>
-    //         <div>
-    //           <a href="#" className="hidden lg:flex items-center py-4 px-2">
-    //             <Image
-    //               src={LogoAMCROSS}
-    //               alt="Logo"
-    //               width="100"
-    //               height="60"
-    //               className="mr-2"
-    //             />
-    //           </a>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   <button
-    //     className=" inline-flex p-3 rounded lg:hidden text-red-600 ml-auto hover:text-red-800 outline-none"
-    //     onClick={handleClick}
-    //   >
-    //     <svg
-    //       className="w-6 h-6"
-    //       fill="none"
-    //       stroke="currentColor"
-    //       viewBox="0 0 24 24"
-    //       xmlns="http://www.w3.org/2000/svg"
-    //     >
-    //       <path
-    //         strokeLinecap="round"
-    //         strokeLinejoin="round"
-    //         strokeWidth={2}
-    //         d="M4 6h16M4 12h16M4 18h16"
-    //       />
-    //     </svg>
-    //   </button>
-    //   <div className={`hidden lg:flex lg:max-w-6xl lg:mx-auto lg:px-4`}>
-    //     <div className=" lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-    //       <div>
-    //         <a href="#" className="hidden lg:flex items-center py-4 px-2">
-    //           <Image
-    //             src={LogoPMI}
-    //             alt="Logo PMI"
-    //             width="100"
-    //             height="45"
-    //             className="mr-2"
-    //           />
-    //         </a>
-    //       </div>
-    //       <Link href="/">
-    //         <a
-    //           className={`${
-    //             router.pathname == "/"
-    //               ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //               : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //           }`}
-    //         >
-    //           Latar Belakang
-    //         </a>
-    //       </Link>
-    //       <Link href="peningkatanKapasitas">
-    //         <a
-    //           className={`${
-    //             router.pathname == "/peningkatanKapasitas"
-    //               ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //               : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //           }`}
-    //         >
-    //           Peningkatan Kapasitas
-    //         </a>
-    //       </Link>
-    //       <Link href="harapanKedepannya">
-    //         <a
-    //           className={`${
-    //             router.pathname == "/harapanKedepannya"
-    //               ? "bg-red-600 text-white lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-900 hover:text-white"
-    //               : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
-    //           }`}
-    //         >
-    //           Harapan Kedepan
-    //         </a>
-    //       </Link>
-    //       <div>
-    //         <a href="#" className="hidden lg:flex items-center py-4 px-2">
-    //           <Image
-    //             src={LogoAMCROSS}
-    //             alt="Logo AMCROSS"
-    //             width="100"
-    //             height="60"
-    //             className="mr-2"
-    //           />
-    //         </a>
-    //       </div>
-    //     </div>
-    //   </div>
-    //   {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-    // </nav>
   );
 }
