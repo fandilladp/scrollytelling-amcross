@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BaselineIndex from "../components/BaselineIndex";
 import FlourishScrollama from "../components/FlourishScrollama";
 import Footer from "../components/Footer";
@@ -12,6 +12,10 @@ export default function Home() {
   const handleLanguage = (data: any) => {
     setBahasa(data);
   };
+useEffect(() => {
+  const getData = sessionStorage.getItem("translate");
+  setBahasa(getData);
+}, [bahasa])
   return (
     <>
       <Head>

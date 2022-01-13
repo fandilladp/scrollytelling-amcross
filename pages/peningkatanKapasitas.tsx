@@ -11,6 +11,10 @@ export default function peningkatanKapasitas() {
   const handleLanguage = (data: any) => {
     setBahasa(data);
   };
+  useEffect(() => {
+    const getData = sessionStorage.getItem("translate");
+    setBahasa(getData);
+  }, [bahasa]);
   return (
     <>
       <Head>
@@ -69,7 +73,7 @@ export default function peningkatanKapasitas() {
             )}
           </p>
         </div>
-        <Scrollytelling onSelectLanguage={bahasa}/>
+        <Scrollytelling onSelectLanguage={bahasa} />
       </main>
     </>
   );

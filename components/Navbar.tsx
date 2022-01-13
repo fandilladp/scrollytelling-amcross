@@ -7,8 +7,7 @@ import { useRouter } from "next/router";
 
 export default function Navbar(props: any) {
   const [active, setActive] = useState(false);
-  const [localData, setLocalData] = useState("");
-  const [translate, setTranslate] = useState(localData);
+  const [translate, setTranslate] = useState("");
   const router = useRouter();
 
   const handleClick = () => {
@@ -18,12 +17,13 @@ export default function Navbar(props: any) {
   const handleTranslate = (data: any) => {
     setTranslate(data);
     props.onSelectLanguage(data);
-    localStorage.setItem("translate", data);
+    sessionStorage.setItem("translate", data);
   };
 
   useEffect(() => {
-    const getData = localStorage.getItem("translate");
-    setLocalData(getData);
+    const getData = sessionStorage.getItem("translate");
+    setTranslate(getData);
+    console.log(getData);
   }, []);
   return (
     <>
@@ -101,13 +101,13 @@ export default function Navbar(props: any) {
             </Link>
             {translate === "EN" ? (
               <div
-                className="bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white cursor-pointer"
+                className="bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold hover:bg-red-600 hover:text-white cursor-pointer align-center flex items-center content-center self-center justify-items-center"
                 onClick={() => handleTranslate("ID")}
               >
                 EN
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="px-1 h-6 w-6"
+                  className="align-middle px-1 h-7 w-7"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >

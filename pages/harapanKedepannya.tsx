@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CreditFooter from "../components/CreditFooter";
 import HeroImage from "../components/HeroImage";
 import Navbar from "../components/Navbar";
@@ -9,6 +9,10 @@ export default function harapanKedepannya() {
   const handleLanguage = (data: any) => {
     setBahasa(data);
   };
+  useEffect(() => {
+    const getData = sessionStorage.getItem("translate");
+    setBahasa(getData);
+  }, [bahasa]);
   return (
     <div>
       <Head>
@@ -81,7 +85,7 @@ export default function harapanKedepannya() {
           height="800"
         />
       </main>
-      <CreditFooter onSelectLanguage={bahasa}/>
+      <CreditFooter onSelectLanguage={bahasa} />
     </div>
   );
 }
