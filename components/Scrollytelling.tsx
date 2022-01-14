@@ -718,7 +718,7 @@ export default function Scrollytelling(props: any) {
           <div className="items-center max-w-6xl mx-auto my-10 px-10">
             <p
               className="font-bold text-2xl text-center mb-10 font-sans"
-              style={{ fontSize: "5vh" }}
+              style={{ fontSize: "5vh", fontFamily: "helveticaNeue" }}
             >
               {bahasa === "EN" ? (
                 <>Institutional Capacity Building</>

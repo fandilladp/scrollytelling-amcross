@@ -11,8 +11,8 @@ export default function BaselineIndex(props: any) {
       <div className="items-center w-full mx-auto ">
         <div className="py-10">
           <h1
-            className="font-bold text-2xl text-center my-10 font-sans"
-            style={{ fontSize: "5vh" }}
+            className="font-bold text-2xl text-center my-10"
+            style={{ fontSize: "5vh", fontFamily: "helveticaNeue" }}
           >
             {bahasa === "EN" ? (
               <>Program Background</>
@@ -78,7 +78,7 @@ export default function BaselineIndex(props: any) {
         <div className="py-10 ">
           <h1
             className="font-bold text-2xl text-center my-10 font-sans"
-            style={{ fontSize: "5vh" }}
+            style={{ fontSize: "5vh", fontFamily: "helveticaNeue"}}
           >
             {bahasa === "EN" ? (
               <>Baseline Study</>

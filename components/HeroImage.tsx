@@ -14,7 +14,7 @@ export default function HeroImage(props : Type) {
       {props.bg === 3 ? <div className={style.heroimage3}></div> : null }
       
       <div className={style.herotext}>
-        <h1 className="font-sans">
+        <h1 style={{ fontFamily: "helveticaNeue" }}>
          {props.data}
         </h1>
       </div>
