@@ -19,7 +19,7 @@ export default function peningkatanKapasitas() {
     <>
       <Head>
         <title>FDRCSI-DRR</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
           rel="stylesheet"
@@ -37,7 +37,7 @@ export default function peningkatanKapasitas() {
         <div className="items-center max-w-6xl mx-auto px-10 py-10 mb-80">
           <p
             className="text-2xl font-bold text-center mt-10 py-10 font-sans"
-            style={{ fontSize: "5vh" }}
+            style={{ fontSize: "5vh",fontFamily: "helveticaNeue" }}
           >
             {bahasa === "EN" ? (
               <>Community and school capacity building</>

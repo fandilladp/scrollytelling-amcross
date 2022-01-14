@@ -17,7 +17,7 @@ export default function harapanKedepannya() {
     <div>
       <Head>
         <title>FDRCSI-DRR</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico" />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
           rel="stylesheet"

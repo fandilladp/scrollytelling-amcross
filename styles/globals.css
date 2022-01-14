@@ -7,3 +7,9 @@
   src: url("../public/assets/trebuchet/trebuc.woff");
   font-style: normal;
 }
+
+@font-face {
+  font-family: "helveticaNeue";
+  src: url("../public/assets/HelveticaNeue//HelveticaNeue-CondensedBold.woff");
+  font-style: normal;
+}
