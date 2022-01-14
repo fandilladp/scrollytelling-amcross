@@ -1,6 +1,6 @@
 .heroimage {
   /* The image used */
-  background-image: url("../../public/images/header.jpg");
+  background-image: url("https://res.cloudinary.com/fandilladp/image/upload/v1642163562/header_okijgl.jpg");
 
   /* Add the blur effect */
   /* Set a specific height */
@@ -14,7 +14,7 @@
 }
 .heroimage2 {
   /* The image used */
-  background-image: url("../../public/images/header2.jpg");
+  background-image: url("https://res.cloudinary.com/fandilladp/image/upload/v1642163563/header2_pncrsm.jpg");
 
   /* Add the blur effect */
   /* Set a specific height */
@@ -28,7 +28,7 @@
 }
 .heroimage3 {
   /* The image used */
-  background-image: url("../../public/images/header3.jpg");
+  background-image: url("https://res.cloudinary.com/fandilladp/image/upload/v1642163563/header3_izqefh.jpg");
 
   /* Add the blur effect */
 
