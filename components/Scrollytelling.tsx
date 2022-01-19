@@ -459,12 +459,12 @@ export default function Scrollytelling(props: any) {
         className={`fixed -z-10 basis-full w-full h-full top-0 flex justify-center justify-items-center`}
       >
         <div
-          className={`${transition1}text-center h-full w-full overflow-hidden align-center flex items-center`}
+           className={`${transition1}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
           <Image
             src={sekolah001}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+            className={style.fade}
             id="imgV1"
           />
         </div>
@@ -474,7 +474,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={sekolah002}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -484,7 +484,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={sekolah003}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -494,7 +494,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={sekolah004}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -504,7 +504,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={masy001}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -514,7 +514,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={masy002}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -524,7 +524,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={masy003}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
@@ -534,7 +534,7 @@ export default function Scrollytelling(props: any) {
           <Image
             src={masy004}
             alt="Map1"
-            className="overflow-hidden w-full h-screen"
+              className={style.fade}
             id="imgV1"
           />
         </div>
