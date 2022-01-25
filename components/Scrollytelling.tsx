@@ -16,30 +16,14 @@ export default function Scrollytelling(props: any) {
   const bahasa = props.onSelectLanguage;
   const [currentStepIndex, setCurrentStepIndex] = useState<any>(0);
   const [scrollDirection, setScrollDirection] = useState("down");
-  const [transition1, setTransition1] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition2, setTransition2] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition3, setTransition3] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition4, setTransition4] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition5, setTransition5] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition6, setTransition6] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition7, setTransition7] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
-  const [transition8, setTransition8] = useState(
-    "opacity-100 transition delay-1000 duration-300 ease-in-out"
-  );
+  const [transition1, setTransition1] = useState("opacity-100 ");
+  const [transition2, setTransition2] = useState("opacity-100 ");
+  const [transition3, setTransition3] = useState("opacity-100 ");
+  const [transition4, setTransition4] = useState("opacity-100 ");
+  const [transition5, setTransition5] = useState("opacity-100 ");
+  const [transition6, setTransition6] = useState("opacity-100 ");
+  const [transition7, setTransition7] = useState("opacity-100 ");
+  const [transition8, setTransition8] = useState("opacity-100 ");
 
   const onStepEnter = ({ data, direction }) => {
     setCurrentStepIndex(data + 1);
@@ -49,407 +33,151 @@ export default function Scrollytelling(props: any) {
   useEffect(() => {
     if (scrollDirection == "down") {
       if (currentStepIndex === 0) {
-        setTransition1(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("opacity-100 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 1) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("opacity-100 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 2) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("opacity-100 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 3) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("opacity-100 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 4) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("opacity-100 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 5) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("opacity-100 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 6) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("opacity-100 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 7) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("opacity-100 ");
       }
     } else if (scrollDirection === "up") {
       if (currentStepIndex === 1) {
-        setTransition1(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("opacity-100 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 2) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("opacity-100 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 3) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("opacity-100 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 3) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("opacity-100 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 4) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("opacity-100 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 5) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("opacity-100 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 6) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("opacity-100 ");
+        setTransition8("hidden opacity-0 ");
       } else if (currentStepIndex === 7) {
-        setTransition1(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition2(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition3(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition4(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition5(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition6(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition7(
-          "hidden opacity-0 transition delay-1000 duration-300 ease-in-out"
-        );
-        setTransition8(
-          "opacity-100 transition delay-1000 duration-300 ease-in-out"
-        );
+        setTransition1("hidden opacity-0 ");
+        setTransition2("hidden opacity-0 ");
+        setTransition3("hidden opacity-0 ");
+        setTransition4("hidden opacity-0 ");
+        setTransition5("hidden opacity-0 ");
+        setTransition6("hidden opacity-0 ");
+        setTransition7("hidden opacity-0 ");
+        setTransition8("opacity-100 ");
       }
     }
   }, [onStepEnter]);
@@ -459,84 +187,44 @@ export default function Scrollytelling(props: any) {
         className={`fixed -z-10 basis-full w-full h-full top-0 flex justify-center justify-items-center`}
       >
         <div
-           className={`${transition1}text-center h-full w-full overflow-hidden align-center flex items-center`}
+          className={`${transition1}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={sekolah001}
-            alt="Map1"
-            className={style.fade}
-            id="imgV1"
-          />
+          <Image src={sekolah001} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition2}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={sekolah002}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={sekolah002} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition3}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={sekolah003}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={sekolah003} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition4}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={sekolah004}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={sekolah004} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition5}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={masy001}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={masy001} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition6}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={masy002}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={masy002} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition7}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={masy003}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={masy003} alt="Map1" id="imgV1" />
         </div>
         <div
           className={`${transition8}text-center h-full w-full overflow-hidden align-center flex items-center`}
         >
-          <Image
-            src={masy004}
-            alt="Map1"
-              className={style.fade}
-            id="imgV1"
-          />
+          <Image src={masy004} alt="Map1" id="imgV1" />
         </div>
       </div>
       <div className="absolute w-full" style={{ fontFamily: "trebuchet" }}>
