@@ -26,11 +26,41 @@ start your server side
 ```bash
 yarn start
 ```
-start your static side 
-
-Open folder Out and open on your web browser
 
 
+# start your static side 
+static export is available in the out folder
 
+a bit of configuration is required if you want to use the static side,
+this configuration will return to default when build && export this project
+
+# check route
+
+added . if css and js links are not found in every `html` page
+
+before
+```bash
+/_next/static/chunk......
+```
+after
+```bash
+./_next/static/chunk......
+```
+# check anchor
+check the href tag for page switching on each `html` file
+
+before
+```bash
+href="/"
+href="Capacity increase"
+```
+after
+```bash
+href="index.html"
+href="Capacityincrease.html"
+```
+open html file in web browser or live server
+
+Have a good time
 
 
