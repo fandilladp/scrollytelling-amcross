@@ -52,85 +52,177 @@ export default function StepMapScrollama(props: any) {
         className="pt-3 pb-0 relative mx-auto "
         style={{ fontFamily: "trebuchet" }}
       >
-        <div className="sticky top-20 flex justify-end -z-10">
-          <div className="h-fit h-16 w-1/4 flex justify-end">
-            {currentStepIndex <= 4 ? (
+        <div className="sticky top-20  flex justify-end -z-10">
+          <div className=" h-full w-1/4 flex justify-end relative">
+            {currentStepIndex === 3 ? (
               <>
-                <div className="h-fit w-fit m-10 p-2 flex bg-white rounded-md flex-col">
+                <div className="h-fit w-fit mt-80  mx-10 p-2 flex bg-white rounded-md flex-col">
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    {bahasa === "EN" ? (
+                      <>Flood Risk</>
+                    ) : (
+                      <> Indeks Risiko Banjir</>
+                    )}
+                  </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-100" />
+                    <div className=" w-5 h-5 bg-resikoBanjir-100" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.082594
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-resikoBanjir-200" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.214227
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-resikoBanjir-300" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.325212
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-resikoBanjir-400" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.449102
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-resikoBanjir-500" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.658167
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : null}
+
+            {currentStepIndex === 4 ? (
+              <>
+                <div className="h-fit w-fit mt-80  mx-10 p-2 flex bg-white rounded-md flex-col">
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    {bahasa === "EN" ? <>Population</> : <>Jumlah Penduduk</>}
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-penduduk-100" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       1277
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-200" />
+                    <div className=" w-5 h-5 bg-penduduk-200" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       1565
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-300" />
+                    <div className=" w-5 h-5 bg-penduduk-300" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       1851
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-400" />
+                    <div className=" w-5 h-5 bg-penduduk-400" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       1954
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-500" />
+                    <div className=" w-5 h-5 bg-penduduk-500" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       2492
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-600" />
+                    <div className=" w-5 h-5 bg-penduduk-600" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       2776
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-700" />
+                    <div className=" w-5 h-5 bg-penduduk-700" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
                       3581
                     </div>
                   </div>
                 </div>
               </>
-            ) : (
+            ) : null}
+            {currentStepIndex === 7 ? (
               <>
-                <div className="w-fit m-10 p-2 flex bg-white rounded-md flex-col">
+                <div className="h-fit w-fit mt-80  mx-10 p-2 flex bg-white rounded-md flex-col">
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    {bahasa === "EN" ? (
+                      <>Flood Risk</>
+                    ) : (
+                      <> Indeks Risiko Banjir</>
+                    )}
+                  </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-100" />
+                    <div className=" w-5 h-5 bg-resikoBanjir-100" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
-                      1125
+                      0.072555
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-200" />
+                    <div className=" w-5 h-5 bg-resikoBanjir-200" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
-                      2104
+                      0.193481
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-300" />
+                    <div className=" w-5 h-5 bg-resikoBanjir-300" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
-                      2495
+                      0.319243
                     </div>
                   </div>
                   <div className="flex content-center py-2">
-                    <div className=" w-5 h-5 bg-map-400" />
+                    <div className=" w-5 h-5 bg-resikoBanjir-400" />
                     <div className="truncate px-1 text-xs md:text-md xl:text-md">
-                      2618
+                      0.452261
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-resikoBanjir-500" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      0.61672
                     </div>
                   </div>
                 </div>
               </>
-            )}
+            ) : null}
+            {currentStepIndex === 8 ? (
+              <div className="h-fit w-fit mt-80  mx-10 p-2 flex bg-white rounded-md flex-col">
+                <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                  {bahasa === "EN" ? <>Population</> : <>Jumlah Penduduk</>}
+                </div>
+                <div className="flex content-center py-2">
+                  <div className=" w-5 h-5 bg-penduduk-100" />
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    1125
+                  </div>
+                </div>
+                <div className="flex content-center py-2">
+                  <div className=" w-5 h-5 bg-penduduk-200" />
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    2104
+                  </div>
+                </div>
+                <div className="flex content-center py-2">
+                  <div className=" w-5 h-5 bg-penduduk-300" />
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    2495
+                  </div>
+                </div>
+                <div className="flex content-center py-2">
+                  <div className=" w-5 h-5 bg-penduduk-400" />
+                  <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                    2618
+                  </div>
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
         <Scrollama onStepEnter={onStepEnter}>
