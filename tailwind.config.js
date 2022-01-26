@@ -14,7 +14,7 @@ module.exports = {
       gray: colors.gray,
       black: colors.black,
       red: colors.red,
-      map: {
+      penduduk: {
         DEFAULT: "#FC0002",
         50: "#FFB5B5",
         100: "#FFA0A1",
@@ -26,6 +26,19 @@ module.exports = {
         700: "#8C0001",
         800: "#540001",
         900: "#1C0000",
+      },
+      resikoBanjir: {
+        DEFAULT: "#08306b",
+        50: "#3A84F0",
+        100: "#6baed6",
+        200: "#4292c6",
+        300: "#2171b5",
+        400: "#08519c",
+        500: "#08306b",
+        600: "#041937",
+        700: "#000103",
+        800: "#000000",
+        900: "#000000",
       },
     },
   },
