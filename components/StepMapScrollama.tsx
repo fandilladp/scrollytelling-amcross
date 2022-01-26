@@ -19,7 +19,7 @@ mapboxgl.accessToken =
 export default function StepMapScrollama(props: any) {
   const bahasa = props.onSelectLanguage;
   const [Map, setMap] = useState();
-  const [currentStepIndex, setCurrentStepIndex] = useState(false);
+  const [currentStepIndex, setCurrentStepIndex] = useState(0);
 
   useEffect(() => {
     const map = new mapboxgl.Map({
@@ -49,12 +49,93 @@ export default function StepMapScrollama(props: any) {
     <>
       <div id="map" className="h-screen w-screen top-0 fixed -z-10" />
       <div
-        className="pt-3 pb-0 relative mx-auto"
+        className="pt-3 pb-0 relative mx-auto "
         style={{ fontFamily: "trebuchet" }}
       >
+        <div className="sticky top-20 flex justify-end -z-10">
+          <div className="h-fit h-16 w-1/4 flex justify-end">
+            {currentStepIndex <= 4 ? (
+              <>
+                <div className="h-fit w-fit m-10 p-2 flex bg-white rounded-md flex-col">
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-100" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      1277
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-200" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      1565
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-300" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      1851
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-400" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      1954
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-500" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      2492
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-600" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      2776
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-700" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      3581
+                    </div>
+                  </div>
+                </div>
+              </>
+            ) : (
+              <>
+                <div className="w-fit m-10 p-2 flex bg-white rounded-md flex-col">
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-100" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      1125
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-200" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      2104
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-300" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      2495
+                    </div>
+                  </div>
+                  <div className="flex content-center py-2">
+                    <div className=" w-5 h-5 bg-map-400" />
+                    <div className="truncate px-1 text-xs md:text-md xl:text-md">
+                      2618
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+          </div>
+        </div>
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={1} key={1}>
-            <div className="my-96 bg-white rounded-md  md:w-1/3 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5">
+            <div className="my-96 z-20 bg-white rounded-md  md:w-1/3 sm:w-1/2 py-2.5 px-5 mx-14 mb-3.5">
               <h3 className="font-bold uppercase text-justify mb-2 text-xl">
                 {bahasa === "EN" ? (
                   <>Lampung province</>
