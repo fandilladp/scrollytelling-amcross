@@ -1,4 +1,4 @@
-export default function layerMap(map, data ) {
+export default function layerMap(map, data) {
   let chapters = {
     world: {
       center: { lon: 0.0, lat: 0.0 },
@@ -56,10 +56,10 @@ export default function layerMap(map, data ) {
       speed: 0.5,
     },
     daerahManggarai: {
-      center: { lon: 120.50754, lat: -8.32941 },
-      zoom: 11.48,
-      pitch: 56.5,
-      bearing: -44.0,
+      center: { lon: 120.4366, lat: -8.34629 },
+      zoom: 12.07,
+      pitch: 60.0,
+      bearing: -136.0,
       speed: 0.5,
     },
   };
