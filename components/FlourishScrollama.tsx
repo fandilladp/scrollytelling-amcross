@@ -74,19 +74,6 @@ export default function FlourishScrollama(props: any) {
                     </>
                   )}
                 </p>
-                <p className="text-justify text-xl pt-5 font-semibold">
-                  {bahasa === "EN" ? (
-                    <>
-                      To be able to sort graphics, please click the gear icon in
-                      the corner bottom right of the graph.
-                    </>
-                  ) : (
-                    <>
-                      Untuk bisa menyortir grafik, silahkan klik ikon gir di
-                      pojok kanan bawah grafik.
-                    </>
-                  )}
-                </p>
               </div>
             </Step>
             <Step data={3} key={3}>
