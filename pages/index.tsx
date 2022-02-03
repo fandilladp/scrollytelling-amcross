@@ -12,15 +12,18 @@ export default function Home() {
   const handleLanguage = (data: any) => {
     setBahasa(data);
   };
-useEffect(() => {
-  const getData = sessionStorage.getItem("translate");
-  setBahasa(getData);
-}, [bahasa])
+  useEffect(() => {
+    const getData = sessionStorage.getItem("translate");
+    setBahasa(getData);
+  }, [bahasa]);
   return (
     <>
       <Head>
         <title>FDRCSI-DRR</title>
-        <link rel="icon" href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico" />
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico"
+        />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
           rel="stylesheet"
@@ -49,8 +52,8 @@ useEffect(() => {
                   {bahasa === "EN" ? (
                     <>
                       Since January 2020, the Indonesian Red Cross (PMI)
-                      together American Red Cross continues Reduction Program
-                      Community Based Disaster Risk Disaster Risk Reduction)
+                      together with the American Red Cross continued the
+                      Community Based Disaster Risk Reduction Program
                     </>
                   ) : (
                     <>
@@ -64,17 +67,12 @@ useEffect(() => {
                 <p className="py-5 px-10 text-justify text-xl">
                   {bahasa === "EN" ? (
                     <>
-                      build community capacity and readiness in respond to
-                      disasters and strengthen institutional capacity PMI in
-                      providing the basic needs of the community in emergency
-                      conditions through the Alert Community Program Disasters
-                      Through Sustainable Disaster Risk Reduction and Inclusive
-                      (
-                      <i>
-                        Fostering Disaster-Ready Communities through Sustainable
-                        and Inclusive Disaster Risk Reduction
-                      </i>
-                      ).
+                      Building the capacity and readiness of the community in
+                      responding disasters and strengthening PMI institutional
+                      capacity in providing basic needs for the community in
+                      emergency conditions through the Fostering Disaster-Ready
+                      Communities through Sustainable and Inclusive Disaster
+                      Risk Reduction program. ).
                     </>
                   ) : (
                     <>
@@ -83,17 +81,22 @@ useEffect(() => {
                       menyediakan kebutuhan dasar masyarakat pada kondisi
                       darurat melalui program Program Masyarakat Siaga Bencana
                       Melalui Pengurangan Risiko Bencana Berkelanjutan dan
-                      Inklusif (Fostering Disaster-Ready Communities through
-                      Sustainable and Inclusive Disaster Risk Reduction).
+                      Inklusif (
+                      <i>
+                        Fostering Disaster-Ready Communities through Sustainable
+                        and Inclusive Disaster Risk Reduction
+                      </i>
+                      ).
                     </>
                   )}
                 </p>
                 <p className="py-5 px-10 text-justify text-xl">
                   {bahasa === "EN" ? (
                     <>
-                      involving seven communities in Tanggamus Regency, Lampung
-                      Province and five communities in Kabupaten West Manggarai,
-                      East Nusa Tenggara Province.
+                      The program was implemented in two provinces involving
+                      seven communities in Tanggamus Regency, Lampung Province
+                      and five communities in West Manggarai Regency, East Nusa
+                      Tenggara Province.
                     </>
                   ) : (
                     <>
@@ -108,7 +111,7 @@ useEffect(() => {
               <iframe
                 className="w-full aspect-video youtube"
                 title="vimeo-player"
-                src="https://www.youtube.com/embed/To0NrBfu3Ro?controls=0"
+                src="https://www.youtube.com/embed/65ie9I4AIDs?controls=0"
                 frameBorder="0"
                 allowFullScreen
               />
@@ -132,7 +135,7 @@ useEffect(() => {
         <Footer
           data={`${
             bahasa === "EN"
-              ? "What has PMI done in the field?"
+              ? "What PMI has done on the ground"
               : "Apa saja yang sudah dilakukan oleh PMI dilapangan"
           }`}
           link={"peningkatanKapasitas"}

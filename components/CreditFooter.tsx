@@ -16,6 +16,7 @@ export default function CreditFooter(props: any) {
             <div className="font-semibold">
               {bahasa === "EN" ? (
                 <>
+                  <p>Photo and Video</p>
                   <p>Video Editor</p>
                   <p>Data Analysis</p>
                   <p>Data Visualization</p>
@@ -23,7 +24,7 @@ export default function CreditFooter(props: any) {
                 </>
               ) : (
                 <>
-                  {" "}
+                  <p>Foto dan Video</p>
                   <p>Penyunting Video</p>
                   <p>Data Analisis</p>
                   <p>Visualisasi Data</p>
@@ -36,18 +37,32 @@ export default function CreditFooter(props: any) {
               <p>:</p>
               <p>:</p>
               <p>:</p>
+              <p>:</p>
             </div>
             <div>
-              <p>Saiful Azhari</p>
-              <p>Wina Natalia</p>
-              <p>Hilman Arioaji</p>
-              <p>Fandilla DP</p>
+              {bahasa === "EN" ? (
+                <>
+                  <p>American Red Cross, Palang Merah Indonesia</p>
+                  <p>Saiful Azhari</p>
+                  <p>Wina Natalia</p>
+                  <p>Hilman Arioaji</p>
+                  <p>Fandilla DP</p>
+                </>
+              ) : (
+                <>
+                  <p>Palang Merah Amerika, Palang Merah Indonesia</p>
+                  <p>Saiful Azhari</p>
+                  <p>Wina Natalia</p>
+                  <p>Hilman Arioaji</p>
+                  <p>Fandilla DP</p>
+                </>
+              )}
             </div>
           </div>
         </div>
       </div>
       <div className="text-center py-6 px-6 bg-gray-200">
-        <Image src={logoCredit} width={200} height={50} />
+        <Image src={logoCredit} width={200} height={45} />
       </div>
     </footer>
   );

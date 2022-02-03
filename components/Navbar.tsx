@@ -70,7 +70,7 @@ export default function Navbar(props: any) {
                     : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
                 }`}
               >
-                {translate === "EN" ? <>Background</> : <> Latar Belakang</>}
+                {translate === "EN" ? <>Project Background</> : <> Latar Belakang</>}
               </a>
             </Link>
             <Link href="peningkatanKapasitas">
@@ -82,7 +82,7 @@ export default function Navbar(props: any) {
                 }`}
               >
                 {translate === "EN" ? (
-                  <>Capacity Upgrade</>
+                  <>Capacity Building</>
                 ) : (
                   <> Peningkatan Kapasitas</>
                 )}
@@ -96,7 +96,7 @@ export default function Navbar(props: any) {
                     : "bg-white text-red-600 lg:inline-flex lg:w-auto w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-red-600 hover:text-white"
                 }`}
               >
-                {translate === "EN" ? <>Future Hope</> : <> Harapan Kedepan</>}
+                {translate === "EN" ? <>Looking Forward</> : <> Harapan Kedepan</>}
               </a>
             </Link>
             {translate === "EN" ? (

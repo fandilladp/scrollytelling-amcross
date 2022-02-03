@@ -417,35 +417,34 @@ export default function Scrollytelling(props: any) {
             <p className="py-5 px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  Such as capacity building activities in the community and
-                  schools at the local PMI also had not run well. However
-                  assistance is still being carried out by the central PMI
-                  regarding activities Covid-19 program and response. PMI
-                  Tanggamus succeeded in making Business Continuities plan (BCP)
-                  or Business Continuity Plan regarding services provided during
-                  the Covid-19 pandemic. Recruitment is also carried out for PMI
-                  volunteers and is given training related to ICBRR.
+                  Same as activities in the community and capacity building
+                  schools, the activities in local PMI also did not go well.
+                  However, assistance is still conducted by PMI headquarters
+                  related to program activities and COVID-19 response. PMI
+                  Tanggamus regency has succeeded in developing a Business
+                  Continuities Plan (BCP) related to services provided during
+                  the COVID-19 pandemic. Recruitment is also carried out for PMI
+                  volunteers and they were given a training related to
+                  Integrated Community Based Disaster Risk Reduction.
                 </>
               ) : (
                 <>
-                  {" "}
                   Seperti kegiatan di masyarakat dan sekolah peningkatan
                   kapasitas di PMI lokal juga sempat tidak berjalan dengan baik.
                   Namun pendampingan masih dilakukan oleh PMI pusat terkait
-                  kegiatan program dan respon Covid-19. PMI Tanggamus berhasil
-                  membuat <i>Business Continuities plan</i> (BCP) atau Rencana
-                  Kelanjutan Bisnis terkait layanan yang diberikan selama masa
-                  pandemi Covid-19. Rekruitmen juga dilakukan untuk relawan PMI
-                  dan diberikan pelatihan terkait ICBRR.
+                  kegiatan program dan respon COVID-19. PMI Tanggamus berhasil
+                  membuat Rencana Kelanjutan Bisnis terkait layanan yang
+                  diberikan selama masa pandemi COVID-19. Rekruitmen juga
+                  dilakukan untuk relawan PMI dan diberikan pelatihan terkait
+                  ICBRR.
                 </>
               )}
             </p>
             <p className="py-5 px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  A significant challenge is the existence of a pandemic.
-                  Anticipation which is done by reallocating the budget and
-                  changes activity.
+                  A significant challenge is the pandemic itself. Anticipation
+                  is done by reallocating budgets and adjustment in activities.
                 </>
               ) : (
                 <>
@@ -459,7 +458,7 @@ export default function Scrollytelling(props: any) {
           <iframe
             className="w-full aspect-video youtube mb-10"
             title="vimeo-player"
-            src="https://www.youtube.com/embed/oWK1hT0xgt0?controls=0"
+            src="https://www.youtube.com/embed/pZ9xVAQ6c5U?controls=0"
             frameBorder="0"
             allowFullScreen
           />
@@ -467,35 +466,34 @@ export default function Scrollytelling(props: any) {
             <p className="py-5 px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  The real visible activity is the change in activity focusing
-                  on the Covid-19 response. IEC material development carried out
-                  as a form of education that is easier to understand for
-                  society. In addition, a Covid-19 hotline was also established
-                  and driven by PMI volunteers. Radio broadcasting is one of the
-                  which is a campaign for living and healthy behavior during
-                  Covid-19.
+                  The real activity is adjusting to changes in activities that
+                  focus on the COVID-19 response. The development of IEC
+                  materials is needed as a form of education that can be easier
+                  to understand for the community. In addition, the COVID-19
+                  hotline were deployed and driven by PMI volunteers. Radio
+                  broadcasts became one of the campaigns of healthy behavior
+                  during COVID-19.
                 </>
               ) : (
                 <>
                   Aktivitas yang nyata terlihat adalah dengan perubahan kegiatan
-                  yang berfokus pada respon Covid-19. Pengembangan materi KIE
+                  yang berfokus pada respon COVID-19. Pengembangan materi KIE
                   dilakukan sebagai bentuk edukasi yang lebih mudah untuk
-                  dipahami bagi masyarakat. Selain itu hotline Covid-19 juga
+                  dipahami bagi masyarakat. Selain itu hotline COVID-19 juga
                   dibentuk dan dimotori oleh para relawan PMI. Siaran Radio
                   menjadi salah satu yang merupakan kampanye perilaku hidup dan
-                  sehat selama Covid-19.
+                  sehat selama COVID-19.
                 </>
               )}
             </p>
             <p className="px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  The following is a summary of activities that have been
-                  carried out by PMI in the field.
+                  Here is the summary of the activities that have been carried
+                  out by PMI in the field.
                 </>
               ) : (
                 <>
-                  {" "}
                   Berikut ini rangkuman kegiatan yang sudah dilakukan oleh PMI
                   dilapangan.
                 </>
@@ -512,7 +510,7 @@ export default function Scrollytelling(props: any) {
         <Footer
           data={`${
             bahasa === "EN"
-              ? "Future expectations for the FDRCSI-DRR program"
+              ? "Expectation for FDRCSI-DRR Program"
               : "Harapan kedepan untuk program FDRCSI-DRR"
           }`}
           link={"harapanKedepannya"}

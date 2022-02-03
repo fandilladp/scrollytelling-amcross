@@ -17,7 +17,10 @@ export default function harapanKedepannya() {
     <div>
       <Head>
         <title>FDRCSI-DRR</title>
-        <link rel="icon" href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico" />
+        <link
+          rel="icon"
+          href="https://res.cloudinary.com/fandilladp/image/upload/v1642164064/favicon_dnqicc.ico"
+        />
         <link
           href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css"
           rel="stylesheet"
@@ -28,31 +31,30 @@ export default function harapanKedepannya() {
       <main style={{ fontFamily: "trebuchet" }}>
         <Navbar onSelectLanguage={(data) => handleLanguage(data)} />
         <HeroImage
-          data={`${bahasa === "EN" ? "Future Hope" : "Harapan Kedepan"}`}
+          data={`${bahasa === "EN" ? "Looking Forward" : "Harapan Kedepan"}`}
           bg={3}
         />
         <div className="items-center max-w-6xl mx-auto px-10 my-40">
           <p className="text-justify text-xl">
             {bahasa === "EN" ? (
               <>
-                This program that is still running can still continue even
-                though there are still obstacles, but anticipation is still
-                carried out based on field conditions. From a program
-                perspective, it can certainly have an impact significant impact
-                on preparedness efforts built at the villages and schools so
-                that this program can form a interconnected and have the
-                principle of inclusiveness in every its activities. Monitoring
-                process needs to be done regularly so that it can provide
-                meaningful input for implementation strategies more appropriate
-                for field conditions. This program is still available in the
-                middle phase. Hopefully in the future the program can run with
-                all the challenges that we must overcome together, because we
-                can't be alone, together we become strong with human values that
-                we always uphold.
+                The program that is still running can still continue to run even
+                though there are some obstacles, but PMI have their anticipation
+                based on field conditions. In terms of programs, it can
+                certainly have a significant impact on preparedness efforts at
+                the village and school level so this program can create a
+                community that is interconnected and also has the principle of
+                inclusiveness in every activity. The monitoring process needs to
+                be done periodically so it can provide meaningful input for a
+                more precise implementation strategy according to the field
+                conditions. The program is still in the middle phase. Hopefully
+                in the future the program can run with all the challenges that
+                we certainly have to overcome together, because we cannot be
+                alone, together we become stronger with humanity values that we
+                always uphold.
               </>
             ) : (
               <>
-                {" "}
                 Program yang masih berjalan ini masih bisa terus berjalan
                 walaupun masih terdapat kendala, namun antisipasi tetap
                 dilakukan berdasarkan kondisi lapangan. Dari sisi program tentu
@@ -74,7 +76,7 @@ export default function harapanKedepannya() {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/gygt-SPXMUI?controls=0"
+          src="https://www.youtube.com/embed/qAFviYGO1iE?controls=0"
           frameBorder="0"
           allowFullScreen
         />

@@ -26,9 +26,9 @@ export default function BaselineIndex(props: any) {
               <p className="py-5 px-10 text-justify text-xl">
                 {bahasa === "EN" ? (
                   <>
-                    The provinces of Lampung and East Nusa Tenggara were
-                    selected as regions high priority is assigned to high risk
-                    class in national risk reduction index.
+                    Lampung and East Nusa Tenggara provinces were chosen as high
+                    priority areas designated in the high risk class in the
+                    national risk reduction index.
                   </>
                 ) : (
                   <>
@@ -42,14 +42,13 @@ export default function BaselineIndex(props: any) {
               <p className="py-5 px-10 text-justify text-xl">
                 {bahasa === "EN" ? (
                   <>
-                    This program aims to build community capacity in
-                    preparedness and in the face of disasters, as well as to
-                    strengthening the institutional capacity of PMI in providing
-                    services disaster risk management that is important to
-                    society. Through With this program, vulnerable community
-                    groups are expected to be able to address vulnerabilities in
-                    the form of inequality, inequality, exclusion, and chronic
-                    environmental degradation.
+                    This program aims to build community capacity in disaster
+                    preparedness and when facing disasters, as well as to
+                    strengthen PMI institutional capacity in providing disaster
+                    risk management services to the community. Through this
+                    program, vulnerable community groups are expected to
+                    overcome vulnerabilities in the form of inequality, gender
+                    equality, exclusion, and chronic environmental degradation.
                   </>
                 ) : (
                   <>
@@ -60,7 +59,7 @@ export default function BaselineIndex(props: any) {
                     layanan manajemen risiko bencana yang penting kepada
                     masyarakat. Melalui program ini, kelompok masyarakat rentan
                     diharapkan bisa mengatasi kerentanan berupa kesenjangan,
-                    ketidaksetaraan, pengucilan, dan degradasi lingkungan
+                    kesetaraan gender, pengucilan, dan degradasi lingkungan
                     kronis.
                   </>
                 )}
@@ -71,14 +70,14 @@ export default function BaselineIndex(props: any) {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/jD5LyUFWp3A?controls=0"
+          src="https://www.youtube.com/embed/3hjuFVHQlO8?controls=0"
           frameBorder="0"
           allowFullScreen
         ></iframe>
         <div className="py-10 ">
           <h1
             className="font-bold text-2xl text-center my-10 font-sans"
-            style={{ fontSize: "5vh", fontFamily: "helveticaNeue"}}
+            style={{ fontSize: "5vh", fontFamily: "helveticaNeue" }}
           >
             {bahasa === "EN" ? (
               <>Baseline Study</>
@@ -93,20 +92,12 @@ export default function BaselineIndex(props: any) {
               <p className="py-5 px-10 text-justify text-xl">
                 {bahasa === "EN" ? (
                   <>
-                    Based on the initial data obtained through the Study
-                    Baseline, community and school community have knowledge of
-                    disaster risks in the environment them, but there are still
-                    few who know how to respond properly in planning or reacting
-                    when a disaster occurs.
+                    Based on preliminary data obtained through the Baseline Study, the community and the school community have knowledge of the risks of disasters in their environment, but there is still few who understand how to respond properly in planning or reacting when disasters occur.
                   </>
                 ) : (
                   <>
-                    Berdasarkan data awal yang didapatkan melalui Studi{" "}
-                    <i>Baseline</i>, masyarakat dan komunitas sekolah memiliki
-                    pengetahuan mengenai risiko bencana yang ada di lingkungan
-                    mereka, namum masih sedikit yang tau bagaimana respon yang
-                    tepat dalam merencanakan atau bereaksi ketika bencana
-                    terjadi.
+                    Berdasarkan data awal yang didapatkan melalui Studi
+                    <i>Baseline</i>, masyarakat dan komunitas sekolah memiliki pengetahuan mengenai risiko bencana yang ada di lingkungan mereka, namum masih sedikit yang memahami bagaimana respon yang tepat dalam merencanakan atau bereaksi ketika bencana terjadi.
                   </>
                 )}
               </p>
@@ -116,7 +107,7 @@ export default function BaselineIndex(props: any) {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/qVWCkzdufUk?controls=0"
+          src="https://www.youtube.com/embed/KF0lDQybEbg?controls=0"
           frameBorder="0"
           allowFullScreen
         ></iframe>
@@ -125,30 +116,22 @@ export default function BaselineIndex(props: any) {
             <p className="py-5 px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  Capacity building in the community has started with
-                  establishment of CBAT in several target communities. Next Many
-                  activities are related to the response Covid-19 in the
-                  implementation area.
+                  Capacity building in the community has begun to run with the establishment of SIBAT in several target communities. Furthermore, many activities are related to the COVID-19 response in the implementation area. 
                 </>
               ) : (
                 <>
-                  Peningkatan kapasitas di masyarakat sudah mulai berjalan
-                  dengan dibentuknya SIBAT di beberapa komunitas sasaran.
-                  Selanjutnya aktivitas yang dilakukan banyak yang berhubungan
-                  dengan respon Covid-19 di area implementasi.
+                  Peningkatan kapasitas di masyarakat sudah mulai berjalan dengan dibentuknya SIBAT di beberapa komunitas sasaran. Selanjutnya aktivitas yang dilakukan banyak yang berhubungan dengan respon COVID-19 di area implementasi.
                 </>
               )}
             </p>
             <p className="py-5 px-10 text-justify text-xl">
               {bahasa === "EN" ? (
                 <>
-                  The results of the Baseline Study can be seen in the following
-                  data visualization this.
+                  Baseline Study Results can be seen in the following data visualization.
                 </>
               ) : (
                 <>
-                  Hasil Studi Baseline bisa dilihat pada visualisasi data
-                  berikut ini.
+                 Hasil Studi Baseline bisa dilihat pada visualisasi data berikut ini.
                 </>
               )}
             </p>
