@@ -76,7 +76,7 @@ export default function harapanKedepannya() {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/qAFviYGO1iE?controls=0"
+          src="https://www.youtube.com/embed/Iq4MZE_NCFg?controls=0"
           frameBorder="0"
           allowFullScreen
         />

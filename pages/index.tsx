@@ -111,7 +111,7 @@ export default function Home() {
               <iframe
                 className="w-full aspect-video youtube"
                 title="vimeo-player"
-                src="https://www.youtube.com/embed/65ie9I4AIDs?controls=0"
+                src="https://www.youtube.com/embed/Gy-kSw0tdOM?controls=0"
                 frameBorder="0"
                 allowFullScreen
               />

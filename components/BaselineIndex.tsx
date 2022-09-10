@@ -70,7 +70,7 @@ export default function BaselineIndex(props: any) {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/3hjuFVHQlO8?controls=0"
+          src="https://www.youtube.com/embed/Y6JPel2DDqU?controls=0"
           frameBorder="0"
           allowFullScreen
         ></iframe>
@@ -107,7 +107,7 @@ export default function BaselineIndex(props: any) {
         <iframe
           className="w-full aspect-video youtube"
           title="vimeo-player"
-          src="https://www.youtube.com/embed/KF0lDQybEbg?controls=0"
+          src="https://www.youtube.com/embed/pJdIXt1zv0s?controls=0"
           frameBorder="0"
           allowFullScreen
         ></iframe>
